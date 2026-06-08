@@ -1,0 +1,51 @@
+[
+  {
+    "type": "function",
+    "name": "registrarProva",
+    "stateMutability": "nonpayable",
+    "inputs": [
+      { "name": "hashProva", "type": "bytes32" },
+      { "name": "tipoDocumento", "type": "string" },
+      { "name": "codigoCAR", "type": "string" },
+      { "name": "latitude", "type": "string" },
+      { "name": "longitude", "type": "string" }
+    ],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "existeProva",
+    "stateMutability": "view",
+    "inputs": [{ "name": "hashProva", "type": "bytes32" }],
+    "outputs": [{ "name": "", "type": "bool" }]
+  },
+  {
+    "type": "function",
+    "name": "obterRegistro",
+    "stateMutability": "view",
+    "inputs": [{ "name": "hashProva", "type": "bytes32" }],
+    "outputs": [
+      { "name": "registrador", "type": "address" },
+      { "name": "tipoDocumento", "type": "string" },
+      { "name": "codigoCAR", "type": "string" },
+      { "name": "latitude", "type": "string" },
+      { "name": "longitude", "type": "string" },
+      { "name": "dataRegistro", "type": "uint256" },
+      { "name": "existe", "type": "bool" }
+    ]
+  },
+  {
+    "type": "event",
+    "name": "ProvaRegistrada",
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "name": "hashProva", "type": "bytes32" },
+      { "indexed": true, "name": "registrador", "type": "address" },
+      { "indexed": false, "name": "tipoDocumento", "type": "string" },
+      { "indexed": false, "name": "codigoCAR", "type": "string" },
+      { "indexed": false, "name": "latitude", "type": "string" },
+      { "indexed": false, "name": "longitude", "type": "string" },
+      { "indexed": false, "name": "dataRegistro", "type": "uint256" }
+    ]
+  }
+]
