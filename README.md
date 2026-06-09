@@ -10,7 +10,7 @@ O foco do projeto é integridade documental. O sistema não tenta validar a verd
 
 ## Problema
 
-Documentos ambientais circulam por e-mail, WhatsApp, sistemas internos e auditorias. Um PDF pode ser verdadeiro como arquivo, mas ainda assim estar ligado a dados inconsistentes, como Código CAR trocado, coordenada alterada ou versão comprometida.
+Documentos ambientais circulam por e-mail, WhatsApp, sistemas internos e auditorias. Um PDF pode ser verdadeiro como arquivo, mas ainda assim estar ligado a dados inconsistentes, como Código CAR (Cadastro Ambiental Rural) trocado, coordenada alterada ou versão comprometida.
 
 O arquivo sozinho não basta. O risco está na combinação entre documento e metadados.
 
@@ -26,7 +26,7 @@ Fluxo resumido:
 4. A prova é registrada na Sepolia.
 5. Depois, o usuário pode verificar se o mesmo PDF e os mesmos dados correspondem ao registro original.
 
-Se mudar o PDF, o tipo de documento, o Código CAR, a latitude ou a longitude, a prova gerada muda e a verificação não encontra o mesmo registro.
+Se mudar o PDF, o tipo de documento, o Código CAR (Cadastro Ambiental Rural), a latitude ou a longitude, a prova gerada muda e a verificação não encontra o mesmo registro.
 
 ## O que o projeto comprova
 
@@ -43,7 +43,7 @@ Em outras palavras, o MVP comprova integridade documental entre arquivo e metada
 
 O projeto não comprova:
 
-- validade jurídica do CAR
+- validade jurídica do Código CAR (Cadastro Ambiental Rural)
 - existência de floresta ou ativo ambiental
 - conformidade regulatória do documento
 - autenticidade material do conteúdo do PDF
@@ -272,7 +272,7 @@ Sugestão de roteiro objetivo:
 3. Confirmar que a rede ativa é Sepolia.
 4. Escolher o modo `Registrar prova`.
 5. Selecionar o tipo de documento.
-6. Informar Código CAR, latitude e longitude.
+6. Informar Código CAR (Cadastro Ambiental Rural), latitude e longitude.
 7. Fazer upload do PDF.
 8. Mostrar a geração local do hash.
 9. Confirmar a transação na MetaMask.
@@ -280,7 +280,7 @@ Sugestão de roteiro objetivo:
 11. Trocar para `Verificar prova`.
 12. Reenviar o mesmo PDF e os mesmos dados.
 13. Mostrar que a prova é encontrada.
-14. Alterar um caractere do CAR ou uma coordenada.
+14. Alterar um caractere do Código CAR (Cadastro Ambiental Rural) ou uma coordenada.
 15. Repetir a verificação e mostrar que o registro não é encontrado.
 
 ## Arquivos fictícios para teste
@@ -299,7 +299,7 @@ Arquivos disponíveis:
 
 Este MVP:
 
-- não valida juridicamente CAR
+- não valida juridicamente o Código CAR (Cadastro Ambiental Rural)
 - não prova existência de floresta
 - não substitui auditoria
 - não valida crédito de carbono
@@ -347,9 +347,9 @@ Este projeto foi motivado por uma dor real: documentos e dados ambientais podem 
 Referências públicas que contextualizam esse tipo de problema:
 
 - Polícia Federal — Operação Castelo de Fogo contra grilagem, desmatamento ilegal e fraudes no Cadastro Ambiental Rural: https://www.gov.br/pf/pt-br/assuntos/noticias/2025/11/pf-deflagra-operacao-castelo-de-fogo-contra-grilagem-e-desmatamento-no-oeste-do-para
-- HNT — notícia sobre ação relacionada a fraudes em CAR remetida ao TJMT: https://www.hnt.com.br/justica/justica-remete-acao-sobre-fraudes-em-car-ao-tjmt-por-foro-de-ex-secretario-da-sema/519756
+- HNT — notícia sobre ação relacionada a fraudes em CAR (Cadastro Ambiental Rural) remetida ao TJMT: https://www.hnt.com.br/justica/justica-remete-acao-sobre-fraudes-em-car-ao-tjmt-por-foro-de-ex-secretario-da-sema/519756
 
-Essas referências são usadas apenas como contexto do problema. O Comprova Ambiental não investiga fraudes, não valida juridicamente o CAR e não substitui auditoria ambiental.
+Essas referências são usadas apenas como contexto do problema. O Comprova Ambiental não investiga fraudes, não valida juridicamente o Código CAR (Cadastro Ambiental Rural) e não substitui auditoria ambiental.
 
 ## Autor
 
